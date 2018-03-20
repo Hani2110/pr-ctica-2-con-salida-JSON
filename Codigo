@@ -1,0 +1,198 @@
+CASTAÑEDA MIYAMOTO ANGELICA YOSAHANI 2NM42
+{
+  "xloco": {
+    "usuario": {
+      "-nbusuario": "profe",
+      "ontologia": {
+        "-nbontologia": "contador",
+        "ideal": {
+          "-nbideal": "isan",
+          "atributos": {
+            "atributo": [
+              {
+                "-nbatributo": "precio",
+                "-tipo": "decimal"
+              },
+              {
+                "-nbatributo": "liminf",
+                "-tipo": "decimal"
+              },
+              {
+                "-nbatributo": "limsup",
+                "-tipo": "decimal"
+              },
+              {
+                "-nbatributo": "tasa",
+                "-tipo": "decimal"
+              },
+              {
+                "-nbatributo": "fija",
+                "-tipo": "decimal"
+              },
+              {
+                "-nbatributo": "isan",
+                "-tipo": "decimal"
+              }
+            ]
+          },
+          "metodos": {
+            "metodo": {
+              "-nbmetodo": "calcuar isan",
+              "asignacion": {
+                "variable": "precio",
+                "operando": "200000"
+              },
+              "decision": {
+                "condicion": " precio menorque75098.87)",
+                "verdadero": {
+                  "metodo": {
+                    "-nbmetodo": "nivel 1",
+                    "asignacion": [
+                      {
+                        "variable": "tasa",
+                        "operando": ".02"
+                      },
+                      {
+                        "variable": "fija",
+                        "operando": "0.00"
+                      },
+                      {
+                        "variable": "liminferior",
+                        "operando": "0.01"
+                      },
+                      {
+                        "variable": "limsuperior",
+                        "operando": "75098.87"
+                      }
+                    ]
+                  }
+                },
+                "falso": {
+                  "decision": {
+                    "condicion": " precio menorque90118.61)",
+                    "verdadero": {
+                      "metodo": {
+                        "-nbmetodo": "nivel 2",
+                        "asignacion": [
+                          {
+                            "variable": "tasa",
+                            "operando": ".05"
+                          },
+                          {
+                            "variable": "fija",
+                            "operando": "1501.96"
+                          },
+                          {
+                            "variable": "liminferior",
+                            "operando": "75098.88"
+                          },
+                          {
+                            "variable": "limsuperior",
+                            "operando": "90118.61"
+                          }
+                        ]
+                      }
+                    },
+                    "falso": {
+                      "decision": {
+                        "condicion": " precio menorque105138.43)",
+                        "verdadero": {
+                          "metodo": {
+                            "-nbmetodo": "nivel 3",
+                            "asignacion": [
+                              {
+                                "variable": "tasa",
+                                "operando": ".10"
+                              },
+                              {
+                                "variable": "fija",
+                                "operando": "2252.97"
+                              },
+                              {
+                                "variable": "liminferior",
+                                "operando": "98118.62"
+                              },
+                              {
+                                "variable": "limsuperior",
+                                "operando": "105138.43"
+                              }
+                            ]
+                          }
+                        },
+                        "falso": {
+                          "decision": {
+                            "condicion": " precio menorque135117.89)",
+                            "verdadero": {
+                              "metodo": {
+                                "-nbmetodo": "nivel 4",
+                                "asignacion": [
+                                  {
+                                    "variable": "tasa",
+                                    "operando": ".15"
+                                  },
+                                  {
+                                    "variable": "fija",
+                                    "operando": "3754.94"
+                                  },
+                                  {
+                                    "variable": "liminferior",
+                                    "operando": "105138.44"
+                                  },
+                                  {
+                                    "variable": "limsuperior",
+                                    "operando": "135177.89"
+                                  }
+                                ]
+                              }
+                            },
+                            "falso": {
+                              "metodo": {
+                                "-nbmetodo": "nivel 5",
+                                "asignacion": [
+                                  {
+                                    "variable": "tasa",
+                                    "operando": "0.17"
+                                  },
+                                  {
+                                    "variable": "fija",
+                                    "operando": "8260.86"
+                                  },
+                                  {
+                                    "variable": "liminferior",
+                                    "operando": "135177.90"
+                                  },
+                                  {
+                                    "variable": "limsuperior",
+                                    "operando": "135177.89"
+                                  },
+                                  {
+                                    "#text": [
+                                      "
+                       *                 ",
+                                      "
+                       *                 ",
+                                      "
+                       *             "
+                                    ],
+                                    "variable": "limsuperior",
+                                    "operando": "135177.89"
+                                  }
+                                ],
+                                "#text": "
+                       *             "
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
